@@ -1,2 +1,23 @@
 
-/* Your CSS Code here. */
+
+.holder {
+    width: 200px;
+    height: 200px;
+    
+    /* Apply grid display property */
+    display: grid; 
+    
+     
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
+    border: 1px solid black; 
+}
+
+.holder > div {
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    display: flex; /* Centers the content (Item 1, Item 2, etc.) */
+    justify-content: center;
+    align-items: center;
+}
